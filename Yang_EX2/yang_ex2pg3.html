@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Living Real Estate - Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    :root {
+        --dark-gray: #383838;
+        --medium-gray: #4D5C60;
+        --light-gray: #525266;
+        --light-green: #D1E0DE;
+        --pale-yellow: #EEF4CE;
+    }
+
+    body {
+        font-family: 'Arial', sans-serif;
+        color: var(--dark-gray);
+        margin: 0 60px; 
+        background-color: #c0cfce;
+        line-height: 1.6;
+    }
+
+    header {
+        text-align: center;
+        background-color: var(--light-green);
+        border-bottom: 2px solid var(--medium-gray);
+    }
+    header img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+        font-style: italic;
+        color: var(--dark-gray);
+        margin: 0;
+    }
+
+    nav {
+        text-align: center;
+        background-color: var(--medium-gray);
+        padding: 10px 0;
+        border-bottom: 2px solid var(--light-gray);
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: inline;
+        margin: 0 15px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: var(--pale-yellow);
+        font-weight: bold;
+    }
+
+    nav ul li a:hover {
+        text-decoration: underline;
+    }
+
+    main {
+        background-color: var(--light-green);
+        padding: 20px;
+        margin: 20px 0;
+        border: 1px solid var(--medium-gray);
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+        font-size: 2em;
+        color: var(--medium-gray);
+        text-align: left;
+        margin-bottom: 20px;
+        border-bottom: 2px solid var(--light-gray);
+        padding-bottom: 10px;
+    }
+
+    .section {
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+        margin-left: 70px;
+        margin-right: 70px;
+        border-bottom: 2px solid var(--medium-gray); 
+        padding-bottom: 20px; 
+        margin-bottom: 40px; 
+    }
+
+    .section:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    .section-content {
+        width: 70%;
+        padding-right: 20px;
+        text-align: justify;
+    }
+
+    .section-image {
+        width: 30%;
+        padding-left: 20px;
+    }
+
+    .section-image img {
+        width: 500px;
+        height: 500px;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .section p {
+        text-indent: 50px;
+        margin-bottom: 15px;
+    }
+    .contact-section {
+        width: 70%;
+        background-color: #feffeb;
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+        margin-left: 270px;
+    }
+
+    .contact-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1000px;
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .contact-info {
+        flex: 1;
+        margin-right: 20px;
+    }
+
+    .contact-info h2 {
+        font-size: 2em;
+        color: var(--medium-gray);
+        margin-bottom: 20px;
+    }
+
+    .contact-info p {
+        margin: 10px 0;
+        color: var(--dark-gray);
+    }
+
+    .contact-map {
+        flex: 1;
+        margin-left: 20px;
+    }
+    .map-container {
+        flex: 1;
+        height: 300px; 
+        position: relative;
+    }
+
+    .responsive-iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+
+    .contact-map iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+        text-align: center;
+        padding: 10px 0;
+        background-color: var(--light-green);
+        font-size: 0.9em;
+        color: var(--light-gray);
+        border-top: 2px solid var(--medium-gray);
+    }
+</style>
+<body>
+    <header>
+        <img src="header2.png" alt="Real Living Real Estate">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="yang_ex2pg1.html">About Us</a></li>
+            <li><a href="yang_ex2pg2.html">Project</a></li>
+            <li><a href="yang_ex2pg3.html">Form</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <h2>Personal Information</h2>
+        <form>
+            <fieldset>
+                <legend>Basic Information</legend>
+                <label>Full Name: <input type="text" name="full_name" required></label><br>
+                <label>Email Address: <input type="email" name="email" required></label><br>
+                <label>Birthday: <input type="date" name="birthday"></label><br>
+                <label>Phone Number: <input type="text" name="phone"></label><br>
+                <label>Address: <input type="text" name="address"></label><br>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Financial Information</legend>
+                <label>Budget: <input type="number" name="budget"></label><br>
+                <label>Yearly Income: <input type="number" name="income"></label><br>
+            </fieldset>
+            
+            <fieldset>
+                <legend>House Preferences</legend>
+                <p>What extra rooms would you like?</p>
+                <label><input type="checkbox" name="extra_rooms" value="pool"> Swimming Pool</label>
+                <label><input type="checkbox" name="extra_rooms" value="office"> Office</label>
+                <label><input type="checkbox" name="extra_rooms" value="gym"> Gym</label>
+                <label><input type="checkbox" name="extra_rooms" value="library"> Library</label>
+                <label><input type="checkbox" name="extra_rooms" value="guest"> Guest Room</label>
+                
+                <p>What rooms do you find unnecessary?</p>
+                <label><input type="checkbox" name="unnecessary_rooms" value="attic"> Attic</label>
+                <label><input type="checkbox" name="unnecessary_rooms" value="basement"> Basement</label>
+                <label><input type="checkbox" name="unnecessary_rooms" value="bar"> Bar</label>
+                <label><input type="checkbox" name="unnecessary_rooms" value="home_theater"> Home Theater</label>
+                <label><input type="checkbox" name="unnecessary_rooms" value="game_room"> Game Room</label>
+            </fieldset>
+            
+            <h2>Website</h2>
+            <fieldset>
+                <legend>Website Feedback</legend>
+                <p>How did you hear about us?</p>
+                <label><input type="checkbox" name="referral" value="friend"> Friend</label>
+                <label><input type="checkbox" name="referral" value="social_media"> Social Media</label>
+                <label><input type="checkbox" name="referral" value="search_engine"> Search Engine</label>
+                <label><input type="checkbox" name="referral" value="ads"> Online Ads</label>
+                
+                <p>Did you find the website satisfactory?</p>
+                <label><input type="radio" name="satisfaction" value="yes"> Yes</label>
+                <label><input type="radio" name="satisfaction" value="no"> No</label>
+                
+                <p>Which part of the website should we improve?</p>
+                <input type="text" name="improve_section">
+            </fieldset>
+            
+            <fieldset>
+                <legend>Additional Comments</legend>
+                <label>Suggestions:<br>
+                    <textarea name="suggestions" rows="5" cols="50"></textarea>
+                </label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Search & Preferences</legend>
+                <label>Search our website: <input type="search" name="search"></label><br>
+                <label>Preferred Home Type: 
+                    <select name="home_type">
+                        <option value="apartment">Apartment</option>
+                        <option value="villa">Villa</option>
+                        <option value="bungalow">Bungalow</option>
+                        <option value="townhouse">Townhouse</option>
+                    </select>
+                </label><br>
+                
+                <label>Choose a property size:
+                    <select name="property_size">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                        <option value="luxury">Luxury</option>
+                    </select>
+                </label><br>
+                
+                <label>Choose a preferred location:
+                    <select name="location">
+                        <option value="urban">Urban</option>
+                        <option value="suburban">Suburban</option>
+                        <option value="rural">Rural</option>
+                        <option value="coastal">Coastal</option>
+                    </select>
+                </label><br>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Contact Details</legend>
+                <label>Preferred Contact Method: 
+                    <input list="contact-methods" name="contact_method">
+                    <datalist id="contact-methods">
+                        <option value="Email">
+                        <option value="Phone Call">
+                        <option value="Text Message">
+                        <option value="WhatsApp">
+                    </datalist>
+                </label>
+            </fieldset>
+            
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Real Living Real Estate. All rights reserved.</p>
+    </footer>
+</body>
+</html>

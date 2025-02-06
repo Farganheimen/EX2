@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Living Real Estate - Inquiry Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="header2.png" alt="Real Living Real Estate">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <h2>Personal Information</h2>
+        <form>
+            <fieldset>
+                <legend>Basic Details</legend>
+                <label>Full Name: <input type="text" name="full_name" required></label>
+                <label>Email: <input type="email" name="email" required></label>
+                <label>Phone Number: <input type="tel" name="phone" required></label>
+                <label>Birthday: <input type="date" name="birthday"></label>
+                <label>Address: <textarea name="address" rows="3"></textarea></label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Financial Information</legend>
+                <label>Budget: <input type="number" name="budget" min="0" required></label>
+                <label>Annual Income: <input type="number" name="income" min="0"></label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Home Preferences</legend>
+                <label>Preferred Home Type: 
+                    <select name="home_type">
+                        <option value="apartment">Apartment</option>
+                        <option value="villa">Villa</option>
+                        <option value="bungalow">Bungalow</option>
+                        <option value="townhouse">Townhouse</option>
+                    </select>
+                </label>
+                
+                <label>Property Size: 
+                    <select name="property_size">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                        <option value="luxury">Luxury</option>
+                    </select>
+                </label>
+                
+                <label>Preferred Location: 
+                    <select name="location">
+                        <option value="urban">Urban</option>
+                        <option value="suburban">Suburban</option>
+                        <option value="rural">Rural</option>
+                        <option value="coastal">Coastal</option>
+                    </select>
+                </label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Additional Features</legend>
+                <p>Desired Amenities:</p>
+                <label><input type="checkbox" name="amenities" value="pool"> Swimming Pool</label>
+                <label><input type="checkbox" name="amenities" value="office"> Office</label>
+                <label><input type="checkbox" name="amenities" value="gym"> Gym</label>
+                <label><input type="checkbox" name="amenities" value="library"> Library</label>
+                <label><input type="checkbox" name="amenities" value="guest"> Guest Room</label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Website Feedback</legend>
+                <label>How did you find us? 
+                    <select name="referral_source">
+                        <option value="friend">Friend</option>
+                        <option value="social_media">Social Media</option>
+                        <option value="search_engine">Search Engine</option>
+                        <option value="ads">Online Ads</option>
+                    </select>
+                </label>
+                
+                <p>Was the website helpful?</p>
+                <label><input type="radio" name="satisfaction" value="yes" required> Yes</label>
+                <label><input type="radio" name="satisfaction" value="no"> No</label>
+                
+                <label>Suggestions for improvement: <textarea name="improvement" rows="3"></textarea></label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Contact Preferences</legend>
+                <label>Preferred Contact Method: 
+                    <select name="contact_method">
+                        <option value="email">Email</option>
+                        <option value="phone">Phone Call</option>
+                        <option value="text">Text Message</option>
+                        <option value="whatsapp">WhatsApp</option>
+                    </select>
+                </label>
+            </fieldset>
+            
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Real Living Real Estate. All rights reserved.</p>
+    </footer>
+</body>
+</html>

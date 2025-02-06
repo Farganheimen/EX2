@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Living Real Estate</title>
+    <style>
+        :root {
+            --dark-gray: #383838;
+            --medium-gray: #4D5C60;
+            --light-gray: #525266;
+            --light-green: #D1E0DE;
+            --pale-yellow: #EEF4CE;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            color: var(--dark-gray);
+            margin: 0 60px; 
+            background-color: #c0cfce;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            background-color: var(--light-green);
+            border-bottom: 2px solid var(--medium-gray);
+        }
+        header img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            font-style: italic;
+            color: var(--dark-gray);
+            margin: 0;
+        }
+
+        nav {
+            text-align: center;
+            background-color: var(--medium-gray);
+            padding: 10px 0;
+            border-bottom: 2px solid var(--light-gray);
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: var(--pale-yellow);
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: var(--light-green);
+            padding: 20px;
+            margin: 20px 0;
+            border: 1px solid var(--medium-gray);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 2em;
+            color: var(--medium-gray);
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--light-gray);
+            padding-bottom: 10px;
+        }
+
+        .section {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+            margin-left: 70px;
+            margin-right: 70px;
+            border-bottom: 2px solid var(--medium-gray); 
+            padding-bottom: 20px; 
+            margin-bottom: 40px; 
+        }
+
+        .section:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .section-content {
+            width: 70%;
+            padding-right: 20px;
+            text-align: justify;
+        }
+
+        .section-image {
+            width: 30%;
+            padding-left: 20px;
+        }
+
+        .section-image img {
+            width: 500px;
+            height: 500px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section p {
+            text-indent: 50px;
+            margin-bottom: 15px;
+        }
+        .contact-section {
+            width: 70%;
+            background-color: #feffeb;
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+            margin-left: 270px;
+        }
+
+        .contact-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            width: 100%;
+            padding: 0 20px;
+        }
+
+        .contact-info {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .contact-info h2 {
+            font-size: 2em;
+            color: var(--medium-gray);
+            margin-bottom: 20px;
+        }
+
+        .contact-info p {
+            margin: 10px 0;
+            color: var(--dark-gray);
+        }
+
+        .contact-map {
+            flex: 1;
+            margin-left: 20px;
+        }
+        .map-container {
+            flex: 1;
+            height: 300px; 
+            position: relative;
+        }
+
+        .responsive-iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .contact-map iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .gallery {
+                text-align: center;
+                padding: 40px 20px;
+                margin: 20px 0;
+                background-color: var(--light-green);
+                
+            }
+
+            .gallery h2 {
+                font-size: 2.0em;
+                color: var(--dark-gray);
+                margin-bottom: 15px;
+                border-bottom: 2px solid var(--medium-gray);
+                padding-bottom: 10px;
+            }
+
+            .gallery-container {
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+                flex-wrap: nowrap;
+            }
+
+            .gallery-container img {
+                width: 325px;
+                height: 250px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease;
+            }
+
+            .gallery-container img:hover {
+                transform: scale(1.05);
+            }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: var(--light-green);
+            font-size: 0.9em;
+            color: var(--light-gray);
+            border-top: 2px solid var(--medium-gray);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="header2.png" alt="Real Living Real Estate">
+    </header>
+    <nav>
+        <ul>
+            
+            <li><a href="yang_ex2pg2.html">Back</a></li>
+            
+        </ul>
+    </nav>
+    <main>
+        <section class="section">
+            <div class="section-content">
+                <h2>Dining Room</h2>
+                <p>
+                    This elegant dining room blends sophistication and warmth, creating the perfect setting for intimate dinners and grand gatherings alike. Featuring high ceilings with intricate crown molding, a chic chandelier, and polished hardwood floors, the space exudes timeless charm. Large panoramic windows allow natural light to flood the room, enhancing its airy ambiance. A custom-built buffet and cabinetry provide both style and functionality, while the open layout ensures seamless flow to the kitchen and living areas. Designed for both comfort and refinement, this dining room is the heart of the home—where meals become memorable moments.
+                </p>
+                <p>
+                    The dining room is an expansive and elegant space, designed to accommodate large gatherings with ease. Surrounded by windows, it offers diners a panoramic view of the lush backyard, enhancing every meal with a touch of nature's beauty. A convenient pass-through into the kitchen ensures effortless service, while the open layout promotes seamless flow into both the kitchen and living areas. This refined space serves as the heart of the home, where intimate dinners and grand celebrations alike are elevated, creating unforgettable moments with every gathering.
+                </p>
+                
+                
+            </div>
+            <div class="section-image">
+                <img src="dining.jpg" alt="About Us Image">
+            </div>
+        </section>
+        <section class="gallery">
+            
+                <h2>More Samples:</h2>
+                <div class="gallery-container">
+                    <img src="dn1.jpg" alt="Dining Room Image 1">
+                    <img src="dn2.jpg" alt="Dining Room Image 2">
+                    <img src="dn3.jpg" alt="Dining Room Image 3">
+                    <img src="dn4.jpg" alt="Dining Room Image 4">
+                    <img src="dn5.jpg" alt="Dining Room Image 5">
+                </div>
+                <h2></h2>
+         </section>   
+        
+        <section class="contact-section">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Contact Us Now!</h2>
+                    <p><strong>Real Living Real Estate</strong></p>
+                    <p>Address: 4251 Nicollet Ave Lane, Minneapolis, Minnesota</p>
+                    <p>Email: hometour@isp.com</p>
+                    <p>Phone: 1-555-NEW-HOME</p>
+                </div>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d723064.191272468!2d-93.97217994671877!3d44.93412283233297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87f627044d73b0cd%3A0x428944fc42000221!2sMinneapolis%20Real%20Estate%20Agent%20-%20Isaac%20Larson!5e0!3m2!1sen!2sph!4v1738298703736!5m2!1sen!2sph" class="responsive-iframe" title="Office Location"></iframe>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        &copy; 2025 Real Living Real Estate. All rights reserved.
+    </footer>
+</body>
+</html>

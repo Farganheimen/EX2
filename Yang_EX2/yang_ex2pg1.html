@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Living Real Estate</title>
+    <style>
+        :root {
+            --dark-gray: #383838;
+            --medium-gray: #4D5C60;
+            --light-gray: #525266;
+            --light-green: #D1E0DE;
+            --pale-yellow: #EEF4CE;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            color: var(--dark-gray);
+            margin: 0 60px; 
+            background-color: #c0cfce;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            background-color: var(--light-green);
+            border-bottom: 2px solid var(--medium-gray);
+        }
+        header img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            font-style: italic;
+            color: var(--dark-gray);
+            margin: 0;
+        }
+
+        nav {
+            text-align: center;
+            background-color: var(--medium-gray);
+            padding: 10px 0;
+            border-bottom: 2px solid var(--light-gray);
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: var(--pale-yellow);
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: var(--light-green);
+            padding: 20px;
+            margin: 20px 0;
+            border: 1px solid var(--medium-gray);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 2em;
+            color: var(--medium-gray);
+            text-align: left;
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--light-gray);
+            padding-bottom: 10px;
+        }
+
+        .section {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+            margin-left: 70px;
+            margin-right: 70px;
+            border-bottom: 2px solid var(--medium-gray); 
+            padding-bottom: 20px; 
+            margin-bottom: 40px; 
+        }
+
+        .section:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .section-content {
+            width: 70%;
+            padding-right: 20px;
+            text-align: justify;
+        }
+
+        .section-image {
+            width: 30%;
+            padding-left: 20px;
+        }
+
+        .section-image img {
+            width: 500px;
+            height: 500px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section p {
+            text-indent: 50px;
+            margin-bottom: 15px;
+        }
+        .contact-section {
+            width: 70%;
+            background-color: #feffeb;
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+            margin-left: 270px;
+        }
+
+        .contact-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            width: 100%;
+            padding: 0 20px;
+        }
+
+        .contact-info {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .contact-info h2 {
+            font-size: 2em;
+            color: var(--medium-gray);
+            margin-bottom: 20px;
+        }
+
+        .contact-info p {
+            margin: 10px 0;
+            color: var(--dark-gray);
+        }
+
+        .contact-map {
+            flex: 1;
+            margin-left: 20px;
+        }
+        .map-container {
+            flex: 1;
+            height: 300px; 
+            position: relative;
+        }
+
+        .responsive-iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .contact-map iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: var(--light-green);
+            font-size: 0.9em;
+            color: var(--light-gray);
+            border-top: 2px solid var(--medium-gray);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="header2.png" alt="Real Living Real Estate">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="yang_ex2pg1.html">About Us</a></li>
+            <li><a href="yang_ex2pg2.html">Project</a></li>
+            <li><a href="yang_ex2pg3.html">Form</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="section">
+            <div class="section-content">
+                <h2>About Us</h2>
+                <p>Real Living Real Estate is a full-service real estate brokerage franchise company with a comprehensive and integrated suite of resources for franchisees and their sales professionals, as well as for consumers who work with them. In 2016 and 2017, Real Living Real Estate was named <strong>"Real Estate Agency Brand of the Year"</strong> in the ongoing Harris Poll EquiTrend® study; and was named <strong>"Most Loved"</strong> and <strong>"Most Trusted"</strong> real estate brand in the study in consecutive years. Additionally, the Real Living Brand and its innovative concepts were recognized by Entrepreneur magazine as well as Inman News, receiving several Inman Innovator Awards. Real Living was also named <strong>"the Most Promising New National Brand"</strong> by the Swanepoel TRENDS Report. Real Living Real Estate is a network brand of HSF Affiliates LLC, which is owned by HomeServices of America, Inc., a Berkshire Hathaway affiliate.
+
+                </p>
+                <p>
+                    Real Living leads the real estate industry with a customer satisfaction rating of 98 percent, based upon research conducted by a third party, independent research firm*.
+                </p>
+                <p>
+                    Based in Minneapolis, Minn., HomeServices of America, Inc. is the second-largest, full-service residential real estate brokerage firm and the largest brokerage-owned settlement services provider in the U.S. and is the majority owner in the Prudential Real Estate and Real Living Real Estate franchise networks. Owned by MidAmerican Energy Holdings Company, a consolidated subsidiary of Berkshire Hathaway Inc., HomeServices' operating companies offer integrated real estate services, including brokerage services, mortgage originations, title and closing services, property and casualty insurance, home warranties and other homeownership services.
+                </p>
+            </div>
+            <div class="section-image">
+                <img src="img1.jpg" alt="About Us Image">
+            </div>
+        </section>
+        <section class="section">
+            <div class="section-content" style ="margin-left: 70px">
+                <h2>A Home That Fits Your Needs</h2>
+                <p>
+                    Finding the perfect home isn’t just about square footage or location; it’s about ensuring your new space complements your lifestyle. Whether you prioritize proximity to work, the serenity of nature, or the convenience of urban living, the right home should align with your unique needs and aspirations.
+                </p>
+                <p>
+                    At Real Living Real Estate, we understand that no two people are alike, which is why we take a <strong>personalized approach</strong> to real estate. Our expert team listens carefully to your preferences and guides you through every step of the process to find a home that not only meets your practical needs but also enhances your everyday living experience.
+                    From spacious family homes to modern city apartments, we offer a wide range of properties that are as diverse as the people who call them home. With our extensive market knowledge and commitment to service, we’re dedicated to helping you find a home where you can truly thrive.
+                </p>
+                <p>
+                    Trust us to turn your vision of the perfect home into reality. Let us help you find the place where you’ll create memories for years to come. Come be a part of the Real Living Real Estate family today and enjoy the comfort and convenience of a home that’s made just for you.
+                </p>
+            </div>
+            <div class="section-image">
+                <img src="img2.jpg" alt="Our Services Image">
+            </div>
+        </section>
+        <section class="section">
+            <div class="section-content" > 
+                <h2>What Makes the Perfect Home?</h2>
+                
+                    <p>Finding the perfect home isn’t just about the right price or the best location—it’s about a <strong>space that suits your unique needs and lifestyle.</strong> And at Real Living Real Estate, we’re here to help you find just that. We understand that everyone’s idea of the perfect home is different, and we’re committed to guiding you to the one that’s made for you. Here’s what we believe truly makes a home perfect:</p>
+                    <ol>
+                        <li ><strong>Right Location</strong> 
+                            <ul>
+                                <li>Imagine living somewhere that puts everything you need right at your doorstep—whether that’s a short commute to work, proximity to schools, or easy access to parks and recreation. We know the neighborhoods inside and out and will help you find a location that fits your lifestyle.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Layout That Works for You</strong> 
+                            <ul>
+                                <li>We know that the perfect home is one that feels right as soon as you walk through the door. From spacious living rooms to functional kitchens, we’ll work with you to find a layout that matches how you live, entertain, and unwind.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Space to Grow</strong>
+                            <ul>
+                                <li>Whether it’s extra bedrooms for a growing family, a backyard for pets, or an office space for remote work, we’ll help you find a home with the right amount of space to accommodate your current needs—and future plans.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Modern Comforts and Conveniences</strong>
+                            <ul>
+                                <li>You deserve a home that makes life easier, with energy-efficient appliances, smart home features, and modern designs that fit your tastes. We’re here to make sure you have everything you need, from convenience to comfort, under one roof.</li>
+                            </ul>
+                            
+                        </li>
+                        <li><strong>Security and Safety</strong>
+                            <ul>
+                                <li>Your peace of mind is our priority. We’ll make sure you’re in a safe, secure environment, whether that’s through gated communities, smart security features, or a low-crime area, so you can feel confident in your new home.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                
+                
+                
+            </div>
+            <div class="section-image" style = "height: 80%">
+                <img src="imng 3.jpg" alt="Our Services Image" style = "height: 600px">
+            </div>
+        </section>
+        <section class="section">
+            <div class="section-content" style ="margin-left: 70px">
+                <h2>So... We've Found A Neighbourhood Fit for You</h2>
+                <p>
+                    You’ve found the perfect neighborhood—one that matches your lifestyle, offers the right amenities, and feels just like home. What's the next step we need to take you ask? Now, it’s time to take the next steps toward making it yours. At Real Living Real Estate, we make the process seamless and stress-free, guiding you every step of the way to ensure you find a home that meets your needs.
+                </p>
+                <ul>
+                    <li><strong>Explore the Project Plans</strong> - Visit our "Project" tab on our website, and explore the detailed floor plans of or standard homes, and get a closer look at our interior design and home features, including a closer look at what you'd expect from a unit' different rooms such as the kitchen, dining room, and living spaces.</li>
+                    <li><strong>Visit the Display Home</strong> - Seeing is believing! Book a tour of our display home to experience the layout, design, and quality craftsmanship firsthand.</li>
+                    <li><strong>Schedule a Consultation</strong> - Our expert team is ready to answer your questions, discuss your options, and help you choose the perfect home for your lifestyle.</li>
+                    <li><strong>Fill Out the Inquiry Form </strong> - Simply complete the form on our website, and we’ll reach out with personalized recommendations, pricing details, and next steps.</li>
+                    <li><strong>Secure Your Dream Home</strong> - Once you’ve made your decision, we’ll guide you through the reservation process and ensure a smooth transition to ownership.</li>
+                </ul>
+                <p>
+                    Your dream home is within reach, and we’re here to make it happen. Take the first step today and let’s bring your vision to life!
+                </p>
+            </div>
+            <div class="section-image">
+                <img src="img4.jpg" alt="Our Services Image" style="height: 250px;  width: 500px;">
+                <img src="img5.jpg" alt="Our Services Image" style="height: 250px;  width: 500px;">
+            </div>
+        </section>
+        <section class="contact-section">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Contact Us</h2>
+                    <p><strong>Real Living Real Estate</strong></p>
+                    <p>Address: 4251 Nicollet Ave Lane, Minneapolis, Minnesota</p>
+                    <p>Email: hometour@isp.com</p>
+                    <p>Phone: 1-555-NEW-HOME</p>
+                </div>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d723064.191272468!2d-93.97217994671877!3d44.93412283233297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87f627044d73b0cd%3A0x428944fc42000221!2sMinneapolis%20Real%20Estate%20Agent%20-%20Isaac%20Larson!5e0!3m2!1sen!2sph!4v1738298703736!5m2!1sen!2sph" class="responsive-iframe" title="Office Location"></iframe>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        &copy; 2025 Real Living Real Estate. All rights reserved.
+    </footer>
+</body>
+</html>

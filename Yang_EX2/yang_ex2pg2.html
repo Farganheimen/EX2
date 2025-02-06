@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tondo Bungalow - Real Living Real Estate</title>
+        <style>
+            :root {
+                --dark-gray: #383838;
+                --medium-gray: #4D5C60;
+                --light-gray: #525266;
+                --light-green: #D1E0DE;
+                --pale-yellow: #EEF4CE;
+                --highlight-color: rgba(255, 255, 255, 0.8);
+            }
+
+            body {
+                font-family: 'Arial', sans-serif;
+                color: var(--dark-gray);
+                margin: 0 60px;
+                background-color: #c0cfce;
+                line-height: 1.6;
+            }
+
+            header {
+                text-align: center;
+                background-color: var(--light-green);
+                border-bottom: 2px solid var(--medium-gray);
+                padding: 20px 0;
+            }
+            header img {
+                max-width: 100%;
+                height: auto;
+            }
+            header h1 {
+                font-size: 2.5em;
+                font-style: italic;
+                color: var(--dark-gray);
+                margin: 0;
+            }
+
+            nav {
+                text-align: center;
+                background-color: var(--medium-gray);
+                padding: 10px 0;
+                border-bottom: 2px solid var(--light-gray);
+            }
+
+            nav ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            nav ul li {
+                display: inline;
+                margin: 0 15px;
+            }
+
+            nav ul li a {
+                text-decoration: none;
+                color: var(--pale-yellow);
+                font-weight: bold;
+            }
+
+            nav ul li a:hover {
+                text-decoration: underline;
+            }
+
+            main {
+                background-color: var(--light-green);
+                padding: 40px 20px;
+                margin: 20px 0;
+                border: 1px solid var(--medium-gray);
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                display: grid;
+                grid-template-columns: 3fr 2fr;
+                gap: 30px;
+                position: relative;
+                background-image: url('wall.jpg');
+                background-size: cover;
+                background-position: center;
+                opacity: 0.7;
+            }
+
+            .bungalow-description {
+                position: relative;
+                background-color: var(--highlight-color);
+                padding: 30px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                z-index: 1;
+            }
+
+            .floor-plan-container {
+                position: relative;
+                z-index: 1;
+            }
+
+            .bungalow-description h2 {
+                font-size: 2.5em;
+                color: var(--dark-gray);
+                margin-bottom: 15px;
+                border-bottom: 2px solid var(--medium-gray);
+                margin-left: 25px;
+                margin-right: 25px;
+            }
+
+            .bungalow-description p {
+                font-size: 1.0em;
+                color: var(--dark-gray);
+                line-height: 1.6;
+                text-align: justify;
+                text-indent: 30px;
+                font-family: 'Arial', sans-serif;
+                margin-left: 25px;
+                margin-right: 5px;
+            }
+
+            .floor-plan-container h2 {
+                font-size: 2.5em;
+                color: var(--medium-gray);
+                margin-bottom: 20px;
+                border-bottom: 2px solid var(--light-gray);
+                padding-bottom: 10px;
+            }
+
+            .buttons-container {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                z-index: 1;
+                width: 60%;
+                margin-left: 180px;
+            }
+
+            .buttons-container a {
+                text-decoration: none;
+                background-color: var(--medium-gray);
+                color: var(--pale-yellow);
+                padding: 15px;
+                font-weight: bold;
+                text-align: center;
+                border-radius: 5px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+
+            .buttons-container a:hover {
+                background-color: var(--dark-gray);
+            }
+
+            .what-is-bungalow {
+                background-color: var(--light-green);
+                padding: 40px 20px;
+                margin: 20px 0;
+                border: 1px solid var(--medium-gray);
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+
+            .what-is-bungalow h2 {
+                font-size: 2.5em;
+                color: var(--dark-gray);
+                margin-bottom: 15px;
+                border-bottom: 2px solid var(--medium-gray);
+                text-align: center;
+            }
+
+            .what-is-bungalow p {
+                font-size: 1.0em;
+                color: var(--dark-gray);
+                line-height: 1.6;
+                text-align: justify;
+                text-indent: 30px;
+                font-family: 'Arial', sans-serif;
+                margin: 0 25px;
+            }
+            .gallery {
+                text-align: center;
+                padding: 40px 20px;
+                margin: 20px 0;
+                background-color: var(--light-green);
+                border: 1px solid var(--medium-gray);
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+
+            .gallery h2 {
+                font-size: 2.5em;
+                color: var(--dark-gray);
+                margin-bottom: 15px;
+                border-bottom: 2px solid var(--medium-gray);
+                padding-bottom: 10px;
+            }
+
+            .gallery-container {
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+                flex-wrap: nowrap;
+            }
+
+            .gallery-container img {
+                width: 18%;
+                height: auto;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease;
+            }
+
+            .gallery-container img:hover {
+                transform: scale(1.05);
+            }
+
+            footer {
+                text-align: center;
+                padding: 10px 0;
+                background-color: var(--light-green);
+                font-size: 0.9em;
+                color: var(--light-gray);
+                border-top: 2px solid var(--medium-gray);
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="header2.png" alt="Real Living Real Estate">
+        </header>
+        <nav>
+            <ul>
+                <li><a href="yang_ex2pg1.html">About Us</a></li>
+                <li><a href="yang_ex2pg2.html">Project</a></li>
+                <li><a href="yang_ex2pg3.html">Form</a></li>
+            </ul>
+        </nav>
+        <section class="what-is-bungalow">
+            <h2>What is a Bungalow?</h2>
+            <p>
+                
+                A <b>bungalow</b> is a charming single-story residence that masterfully combines efficiency with aesthetic appeal. Originating in the Bengal region of South Asia during the mid-17th century, the term "bungalow" is derived from the Hindi word <b>"bangla,"</b> referring to a house in the Bengali style. British colonizers adopted this architectural design, appreciating its practicality and inviting nature, and subsequently introduced it to other parts of the world. Key characteristics of bungalows include their <b>single-story layout</b>, which offers seamless accessibility and eliminates the need for stairs, making them ideal for individuals seeking convenience and ease of movement. The <b>low-pitched roofs with wide eaves</b> not only enhance the aesthetic appeal but also provide practical benefits such as protection from the elements. <b>Expansive front porches</b> serve as welcoming transitional spaces between the indoors and outdoors, fostering a sense of community and relaxation. Inside, <b>open floor plans</b> create a spacious and airy atmosphere, promoting a comfortable and connected living experience. Embracing a bungalow means investing in a home that offers <b>timeless charm</b>, <b>efficient design</b>, and a harmonious blend of indoor and outdoor living spaces. Its historical roots and distinctive features make it a desirable choice for those seeking both comfort and character in their residence.
+            </p>
+            </section>
+        <main>
+            <div class="bungalow-description" >
+                <h2>Tondo Bungalow</h2>
+                <p style="color: black;">
+                    This exquisite Tondo bungalow combines modern luxury with thoughtful design. The master bedroom offers a peaceful retreat with plush carpeting, crown molding, and a luxurious en-suite with a soaking tub and walk-in rain shower. The living room features hardwood floors, a statement fireplace, and large windows, creating a bright, inviting space for relaxation or entertaining.
+                </p>
+                <p style="color: black;">
+                    The elegant dining room connects seamlessly with the open layout, perfect for gatherings. The chef-inspired kitchen boasts state-of-the-art appliances, granite countertops, and custom cabinetry, making it ideal for both casual and gourmet cooking. The library offers a cozy reading nook with built-in shelving, creating a perfect space for quiet moments. Every detail of this bungalow is designed to provide comfort and sophistication, making it a truly exceptional living space.
+                </p>
+                <p style="color: black;">
+                    Click on the buttons below or the image sections to view our lovely showrooms and details:
+                </p>
+                <br><br>
+                <div class="buttons-container">
+                    <a href="master.html">Master Bedroom</a>
+                    <a href="living.html">Living Room</a>
+                    <a href="dining.html">Dining Room</a>
+                    <a href="kitchen.html">Kitchen</a>
+                    <a href="library.html">Library</a>
+                </div>
+            </div>
+
+            <div class="floor-plan-container" style="margin-left: -30px">
+                <img src="floorplan.gif" alt="Floor Plan" usemap="#floorplanmap" style="width: 100%; height: 800px;">
+                <map name="floorplanmap">
+                    <area shape="rect" coords="33,69,150,180" alt="Dining Room" href="dining.html">
+                    <area shape="rect" coords="180,70,300,180" alt="Living Room" href="living.html">
+                    <area shape="rect" coords="360,75,540,180" alt="Master Bedroom" href="master.html">
+                    <area shape="rect" coords="300,400,420,540" alt="" href="library.html">
+                    <area shape="rect" coords="0,330,200,540" alt="Kitchen" href="kitchen.html">
+                    
+                </map>
+            </div>
+        </main>
+        <section class="gallery">
+            <h2>Showcase Gallery</h2>
+            <div class="gallery-container">
+                <img src="bb1.jpg" alt="Showcase 1">
+                <img src="bb2.jpg" alt="Showcase 2">
+                <img src="bb3.jpg" alt="Showcase 3">
+                <img src="bb4.jpg" alt="Showcase 4">
+                <img src="bb5.jpg" alt="Showcase 5">
+                
+            </div>
+        </section>
+
+        
+
+        <footer>
+            &copy; 2025 Real Living Real Estate. All rights reserved.
+        </footer>
+    </body>
+</html>
